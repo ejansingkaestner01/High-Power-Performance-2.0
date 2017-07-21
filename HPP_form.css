@@ -1,0 +1,193 @@
+/* ================================= 
+  Base Element Styles
+==================================== */ 
+
+body {
+    color:#f7d3a1;
+    line-height: 1.5; 
+    width: 70%; 
+    margin: 0 auto; 
+    font-family: "Metamorphous", cursive; 
+    background: #282727;          
+    position: right;
+} 
+
+h1 {
+    margin: 1em; 
+    width: 100%;
+    background:red; 
+    border: black; 
+    color: black;
+} 
+
+#logo-link:first-child {    
+    color: black;
+} 
+
+#logo-link:hover {
+    background-color: white; 
+    color: black;
+}
+
+
+.main-page {
+    position: right;     
+} 
+
+
+.sidenav {
+    float: left; 
+    position: absolute;     
+    top: 100px;
+    left: -10px;  
+    background: red;
+    color: black;
+      
+}
+
+.sidenav a{
+    padding: 20px 10px 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    display: flex;
+    transition: 0.3s
+}  
+
+.sidenav a:hover {
+    background-color: white; 
+    color: black;
+}
+
+#icon{
+    position: flex;
+    display: inline-block;
+    property: ;
+    z-index: 2;
+
+}
+footer{
+    position: absolute;     
+    right: 0;
+    left: 0;
+    height: 30px;
+    background: red; 
+    display: inline-block; 
+    text-align: center;
+} 
+
+.questions-footer{
+    bottom:0;
+}
+
+/* ================================= 
+  Modal
+==================================== */ 
+
+.modal-header, .modal-body {    
+    position: relative;
+    
+}
+/* ================================= 
+  Calendar
+==================================== */ 
+
+.container {
+	max-width: 10%;
+}
+
+.appointment {
+	position: absolute;
+	outline: 2px solid #1166ff;
+	outline-offset: -2px;
+	background-color: #0000ff;
+	overflow : auto;
+	
+
+}
+
+.pencil_icon {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: inline;
+	width: 20px;
+	height: 28px;
+	float:right;
+	z-index: 20;
+	background-image: url(images/pencil20.png);
+	background-repeat: no-repeat;
+}
+
+.x_icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline;
+	width: 20px;
+	height: 28px;
+	float:right;
+	z-index: 20;
+	background-image: url(images/x.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
+
+#hours, #monday, #tuesday, #wednesday, #thursday, #friday, #saturday, #sunday {
+	border-collapse: collapse;
+	max-width: 100%;
+	border: 1px solid black;
+	background-color:;
+}
+
+#main {
+	display: block;
+	max-width: 100%;
+}
+
+
+td{
+    background-color:lightYellow;
+}
+.error {
+	color: red;
+}
+#formDiv {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	background-color: lightGray;
+	width: 80%;
+}
+
+#temp{
+    color:white;
+    text-align: center;
+}
+
+#coverDiv {
+	/*position: absolute;*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */ 
+
+@media (min-width: 32em) {
+  .ianProfile { width: 70%; }
+  .daveProfile {width: 70%;} 
+  a {width:70%;
+  position: flex;} 
+}
