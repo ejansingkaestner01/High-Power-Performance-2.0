@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html> 
+        <head>
+        <title>Highpower Performance</title>
+            <link rel="stylesheet" href="normalize.css">
+            <link rel="stylesheet" href="site.css"> 
+        </head>
+        <body>
+        <h1> 
+            <a href="main page.html" id="logo-link">High Power Performance</a>
+
+            <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet"> 
+        </h1>
+      <div id="sidenav" class="sidenav"> 
+             
+        <a href="HPHP mission.html">Mission</a>
+        
+        <a href="HPHP questions.html">Questions?</a> 
+        <a href="hphp schedule.html">Calendar</a>
+      </div> 
+        
+        <!-- DayPilot library -->
+     <body onload="expandTables()">
+		<div>
+			<header>
+				<h1 id="temp"><em><u>Appointment</u></em></h1>
+			</header>
+
+			<div id="main">
+				<table class = "container">
+					<tr>
+						<td class = "container">
+						    <table id="hours"></table>
+						</td>
+						<td class = "container">
+						    <table id="monday">
+						    </table>
+						</td>
+						<td class = "container">
+						    <table id="tuesday">
+						    </table>
+					    </td>
+						<td class = "container">
+						    <table id="wednesday">
+						    </table>
+					    </td>
+						<td class = "container">
+						    <table id="thursday">
+						    </table>
+						</td>
+						<td class = "container">
+						    <table id="friday">
+						    </table>
+						</td>
+						<td class = "container">
+						    <table id="saturday">
+						    </table>
+					    </td>
+						<td class = "container">
+						    <table id="sunday">
+						    </table>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+
+<div id="coverDiv">
+
+<div id="formDiv" style="">
+	<form id="form" name="form" action="" method="get">
+						<p id = "errorText" class ="error"></p>
+						<p>
+							Appointment details:
+						</p>
+						<textarea id="details" name="details" rows="10" cols="2"></textarea>
+						<p>
+							<!-- Duration: -->
+							<input type="time" id="duration" hidden>
+						<p id = "durationerror" class ="error"></p>
+							Start time:
+							<input type="text" id="startTime" readonly>
+							End time:
+							<input type="time" id="endTime">
+							Select a colour for this appointment:
+							<input type="color" id="colour" value = 'red'>
+							<INPUT type="button" name="submit" Value="Create" onclick="putDataIn(this.form)">
+							<INPUT type="button" name="cancel" Value="Cancel" onclick="closeForm(this.form)">
+						</p>
+					</form>
+				</body>
+
+
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+    <script src="js/horsepower.js" type="text/javascript"></script>
+
+
+	<footer class="questions-footer"> 
+        
+        162 Fieldcrest Circle, 
+        Hendersonville, TN 37075 	<a href="HPHP mission.html">Mission</a>        
+        <a href="HPHP questions.html">Questions?</a> <a href="hphp schedule.html">Calendar</a>
+    </footer>
+
+</html>
